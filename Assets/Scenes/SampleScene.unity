@@ -122,6 +122,94 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &23419600
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2962699937524571439, guid: 1ba5d02ec4465854dbc46b7162d6f304, type: 3}
+      propertyPath: m_Name
+      value: Lixeira_Verde
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756406190283248016, guid: 1ba5d02ec4465854dbc46b7162d6f304, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.242141
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756406190283248016, guid: 1ba5d02ec4465854dbc46b7162d6f304, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3436189
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756406190283248016, guid: 1ba5d02ec4465854dbc46b7162d6f304, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.082630545
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756406190283248016, guid: 1ba5d02ec4465854dbc46b7162d6f304, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756406190283248016, guid: 1ba5d02ec4465854dbc46b7162d6f304, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756406190283248016, guid: 1ba5d02ec4465854dbc46b7162d6f304, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756406190283248016, guid: 1ba5d02ec4465854dbc46b7162d6f304, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756406190283248016, guid: 1ba5d02ec4465854dbc46b7162d6f304, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756406190283248016, guid: 1ba5d02ec4465854dbc46b7162d6f304, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756406190283248016, guid: 1ba5d02ec4465854dbc46b7162d6f304, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ba5d02ec4465854dbc46b7162d6f304, type: 3}
+--- !u!1 &241463123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 241463124}
+  m_Layer: 0
+  m_Name: Lixeiras
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &241463124
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241463123}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.67, y: 1.51, z: -0.082630545}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +424,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  lixoCarregado: {fileID: 0}
+  pontos: 0
 --- !u!61 &953912758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -365,7 +455,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -408,9 +498,242 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!1001 &976754237
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2011042087855025631, guid: 33d139e586a635542b01a217ebebc005, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259071104521174605, guid: 33d139e586a635542b01a217ebebc005, type: 3}
+      propertyPath: m_Name
+      value: Lixo_Vermelho_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588622708239123143, guid: 33d139e586a635542b01a217ebebc005, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.1417623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588622708239123143, guid: 33d139e586a635542b01a217ebebc005, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.35651442
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588622708239123143, guid: 33d139e586a635542b01a217ebebc005, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588622708239123143, guid: 33d139e586a635542b01a217ebebc005, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588622708239123143, guid: 33d139e586a635542b01a217ebebc005, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588622708239123143, guid: 33d139e586a635542b01a217ebebc005, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588622708239123143, guid: 33d139e586a635542b01a217ebebc005, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588622708239123143, guid: 33d139e586a635542b01a217ebebc005, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588622708239123143, guid: 33d139e586a635542b01a217ebebc005, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588622708239123143, guid: 33d139e586a635542b01a217ebebc005, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 33d139e586a635542b01a217ebebc005, type: 3}
+--- !u!1001 &1655578172
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2299730804986965037, guid: d0ccfe507d4cdc04f917c53639f5deae, type: 3}
+      propertyPath: m_Name
+      value: Lixeira_Verde (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365903704819222598, guid: d0ccfe507d4cdc04f917c53639f5deae, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365903704819222598, guid: d0ccfe507d4cdc04f917c53639f5deae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365903704819222598, guid: d0ccfe507d4cdc04f917c53639f5deae, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.082630545
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365903704819222598, guid: d0ccfe507d4cdc04f917c53639f5deae, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365903704819222598, guid: d0ccfe507d4cdc04f917c53639f5deae, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365903704819222598, guid: d0ccfe507d4cdc04f917c53639f5deae, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365903704819222598, guid: d0ccfe507d4cdc04f917c53639f5deae, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365903704819222598, guid: d0ccfe507d4cdc04f917c53639f5deae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365903704819222598, guid: d0ccfe507d4cdc04f917c53639f5deae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365903704819222598, guid: d0ccfe507d4cdc04f917c53639f5deae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749076482557039655, guid: d0ccfe507d4cdc04f917c53639f5deae, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0ccfe507d4cdc04f917c53639f5deae, type: 3}
+--- !u!1 &1911188281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1911188283}
+  - component: {fileID: 1911188282}
+  m_Layer: 0
+  m_Name: GerenciadorDoJogo
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1911188282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911188281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a83ac118f5c47d54ebfff0fda04752ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1911188283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911188281}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.1675534, y: 0.6397001, z: -0.035136975}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &8363716645041864992
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3563543738032295873, guid: 41ebf3fb40391ee48a24033cd79166ed, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182349235682808088, guid: 41ebf3fb40391ee48a24033cd79166ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182349235682808088, guid: 41ebf3fb40391ee48a24033cd79166ed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182349235682808088, guid: 41ebf3fb40391ee48a24033cd79166ed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182349235682808088, guid: 41ebf3fb40391ee48a24033cd79166ed, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182349235682808088, guid: 41ebf3fb40391ee48a24033cd79166ed, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182349235682808088, guid: 41ebf3fb40391ee48a24033cd79166ed, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182349235682808088, guid: 41ebf3fb40391ee48a24033cd79166ed, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182349235682808088, guid: 41ebf3fb40391ee48a24033cd79166ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182349235682808088, guid: 41ebf3fb40391ee48a24033cd79166ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182349235682808088, guid: 41ebf3fb40391ee48a24033cd79166ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084374500153724293, guid: 41ebf3fb40391ee48a24033cd79166ed, type: 3}
+      propertyPath: m_Name
+      value: Lixeira_Vermelha
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 41ebf3fb40391ee48a24033cd79166ed, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 953912756}
+  - {fileID: 241463124}
+  - {fileID: 8363716645041864992}
+  - {fileID: 1911188283}
+  - {fileID: 23419600}
+  - {fileID: 976754237}
+  - {fileID: 1655578172}

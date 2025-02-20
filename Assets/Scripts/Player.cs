@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    //VARIAVEIS DE MOVIMENTO
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Vector2 movement;
+
+    //COLETA DE LIXO
+    [SerializeField] private GameObject lixoCarregado = null;
+    [SerializeField] private int pontos = 0;
 
     void Start()
     {
@@ -20,6 +25,13 @@ public class Player : MonoBehaviour
         // Captura a entrada do jogador
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        //COLETA DE LIXO
+        // Se o jogador estiver segurando um lixo, ele segue a posição do jogador
+        if (lixoCarregado != null)
+        {
+            lixoCarregado.transform.position = transform.position;
+        }
     }
 
     void FixedUpdate()
@@ -27,17 +39,51 @@ public class Player : MonoBehaviour
         // Move o personagem
         rb.velocity = movement.normalized * moveSpeed;
 
-        //Configurando dire��es
+        //Configurando direções
         if (rb.velocity.x > 0)
-        {
-            //transform.localScale = new Vector3(1f, transform.localScale.y, transform.localScale.z);
+        {            
             sr.flipX = false;
         }
         if (rb.velocity.x < 0)
-        {
-            //transform.localScale = new Vector3(-1f, transform.localScale.y, transform.localScale.z);
+        {            
             sr.flipX = true;
         }
     }
 
-}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Pegando o lixo
+        if (collision.CompareTag("Lixo_Verde") || collision.CompareTag("Lixo_Azul") || collision.CompareTag("Lixo_Vermelho") || collision.CompareTag("Lixo_Amarelo"))
+        {
+            if (lixoCarregado == null) // O jogador só pode carregar um lixo por vez
+            {
+                lixoCarregado = collision.gameObject;
+            }
+        }
+
+        // Descartando o lixo
+        if (collision.CompareTag("Lixeira_Verde") || collision.CompareTag("Lixeira_Azul") || collision.CompareTag("Lixeira_Vermelha") || collision.CompareTag("Lixeira_Amarela"))
+        {
+            if (lixoCarregado != null)
+            {
+                string corLixeira = collision.tag.Replace("Lixeira_", "");
+                string corLixo = lixoCarregado.tag.Replace("Lixo_", "");
+
+                if (corLixo == corLixeira)
+                {
+                    pontos += 10; // Ganha pontos
+                    Debug.Log("Lixo descartado corretamente! Pontos: " + pontos);
+                }
+                else
+                {
+                    pontos -= 5; // Perde pontos
+                    Debug.Log("Lixo descartado errado! Pontos: " + pontos);
+                }
+
+                Destroy(lixoCarregado); // Remove o lixo descartado
+                lixoCarregado = null; // Libera para pegar outro lixo
+            }
+        }
+    }
+
+    }
