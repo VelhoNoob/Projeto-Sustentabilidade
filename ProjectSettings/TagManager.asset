@@ -4,14 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Lixeira_Amarela
-  - Lixeira_Azul
-  - Lixeira_Verde
-  - Lixo_Amarelo
-  - Lixo_Azul
-  - Lixo_Verde
   - Lixo_Vermelho
-  - Lixeira_Vermelha
+  - Lixeira_Vermelho
+  - Lixeira_Verde
+  - Lixo_Verde
+  - Lixo_Azul
+  - Lixeira_Azul
+  - Lixo_Amarelo
+  - Lixeira_Amarelo
   layers:
   - Default
   - TransparentFX

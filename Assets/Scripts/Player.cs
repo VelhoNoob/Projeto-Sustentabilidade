@@ -68,8 +68,8 @@ public class Player : MonoBehaviour
         if (lixoCarregado != null &&
             (collision.CompareTag("Lixeira_Verde") ||
              collision.CompareTag("Lixeira_Azul") ||
-             collision.CompareTag("Lixeira_Vermelha") ||
-             collision.CompareTag("Lixeira_Amarela")))
+             collision.CompareTag("Lixeira_Vermelho") ||
+             collision.CompareTag("Lixeira_Amarelo")))
         {
             string corLixeira = collision.tag.Replace("Lixeira_", "");
             string corLixo = lixoCarregado.tag.Replace("Lixo_", "");
