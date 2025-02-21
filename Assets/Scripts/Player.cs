@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
         {
             lixoCarregado = collision.gameObject; // O jogador pega o lixo
             lixoCarregado.GetComponent<Collider2D>().enabled = false; // Desabilita o collider do lixo para evitar múltiplas coletas
-            lixoCarregado.transform.SetParent(transform); // Faz o lixo "grudar" no jogador
+            lixoCarregado.transform.SetParent(transform); // Faz o lixo "grudar" no jogadorx
         }
 
         // Descartando o lixo na lixeira

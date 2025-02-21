@@ -12,6 +12,8 @@ TagManager:
   - Lixeira_Azul
   - Lixo_Amarelo
   - Lixeira_Amarelo
+  - Lixo
+  - Lixeira
   layers:
   - Default
   - TransparentFX
@@ -46,6 +48,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 4182865407
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
