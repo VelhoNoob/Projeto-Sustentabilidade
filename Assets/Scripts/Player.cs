@@ -53,37 +53,41 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Pegando o lixo
-        if (collision.CompareTag("Lixo_Verde") || collision.CompareTag("Lixo_Azul") || collision.CompareTag("Lixo_Vermelho") || collision.CompareTag("Lixo_Amarelo"))
+        if (lixoCarregado == null &&
+            (collision.CompareTag("Lixo_Verde") ||
+             collision.CompareTag("Lixo_Azul") ||
+             collision.CompareTag("Lixo_Vermelho") ||
+             collision.CompareTag("Lixo_Amarelo")))
         {
-            if (lixoCarregado == null) // O jogador só pode carregar um lixo por vez
-            {
-                lixoCarregado = collision.gameObject;
-            }
+            lixoCarregado = collision.gameObject; // O jogador pega o lixo
+            lixoCarregado.GetComponent<Collider2D>().enabled = false; // Desabilita o collider do lixo para evitar múltiplas coletas
+            lixoCarregado.transform.SetParent(transform); // Faz o lixo "grudar" no jogador
         }
 
-        // Descartando o lixo
-        if (collision.CompareTag("Lixeira_Verde") || collision.CompareTag("Lixeira_Azul") || collision.CompareTag("Lixeira_Vermelha") || collision.CompareTag("Lixeira_Amarela"))
+        // Descartando o lixo na lixeira
+        if (lixoCarregado != null &&
+            (collision.CompareTag("Lixeira_Verde") ||
+             collision.CompareTag("Lixeira_Azul") ||
+             collision.CompareTag("Lixeira_Vermelha") ||
+             collision.CompareTag("Lixeira_Amarela")))
         {
-            if (lixoCarregado != null)
+            string corLixeira = collision.tag.Replace("Lixeira_", "");
+            string corLixo = lixoCarregado.tag.Replace("Lixo_", "");
+
+            if (corLixo == corLixeira)
             {
-                string corLixeira = collision.tag.Replace("Lixeira_", "");
-                string corLixo = lixoCarregado.tag.Replace("Lixo_", "");
-
-                if (corLixo == corLixeira)
-                {
-                    pontos += 10; // Ganha pontos
-                    Debug.Log("Lixo descartado corretamente! Pontos: " + pontos);
-                }
-                else
-                {
-                    pontos -= 5; // Perde pontos
-                    Debug.Log("Lixo descartado errado! Pontos: " + pontos);
-                }
-
-                Destroy(lixoCarregado); // Remove o lixo descartado
-                lixoCarregado = null; // Libera para pegar outro lixo
+                pontos += 10; // Ganha pontos
+                Debug.Log("Lixo descartado corretamente! Pontos: " + pontos);
             }
+            else
+            {
+                pontos -= 5; // Perde pontos
+                Debug.Log("Lixo descartado errado! Pontos: " + pontos);
+            }
+
+            Destroy(lixoCarregado); // Remove o lixo descartado
+            lixoCarregado = null; // Libera o jogador para pegar outro lixo
         }
     }
 
-    }
+}
