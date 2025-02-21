@@ -7,11 +7,11 @@ TagManager:
   - Lixeira_Amarela
   - Lixeira_Azul
   - Lixeira_Verde
-  - Lixeira_Vermelha
   - Lixo_Amarelo
   - Lixo_Azul
   - Lixo_Verde
-  - Lixo_Vermeho
+  - Lixo_Vermelho
+  - Lixeira_Vermelha
   layers:
   - Default
   - TransparentFX
