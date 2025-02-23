@@ -5,14 +5,16 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     //VARIAVEIS DE MOVIMENTO
-    public float moveSpeed = 5f;
+    [Header("Movimento")]
+    [SerializeField] private float velocidadeMovimento = 5f;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
-    private Vector2 movement;
+    private Vector2 movimento;
 
     //COLETA DE LIXO
+    [Header("Coleta de lixo")]
     [SerializeField] private GameObject lixoCarregado = null;
-    [SerializeField] private int pontos = 0;
+    [SerializeField] public int pontos = 0;
 
     void Start()
     {
@@ -23,8 +25,8 @@ public class Player : MonoBehaviour
     void Update()
     {
         // Captura a entrada do jogador
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movimento.x = Input.GetAxisRaw("Horizontal");
+        movimento.y = Input.GetAxisRaw("Vertical");
 
         //COLETA DE LIXO
         // Se o jogador estiver segurando um lixo, ele segue a posição do jogador
@@ -37,9 +39,9 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         // Move o personagem
-        rb.velocity = movement.normalized * moveSpeed;
+        rb.velocity = movimento.normalized * velocidadeMovimento;
 
-        //Configurando direções
+        //Configurando direções do movimento
         if (rb.velocity.x > 0)
         {            
             sr.flipX = false;
