@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -19,8 +19,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        pontuacao = player.pontos;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();        
     }
 
 
@@ -28,6 +27,7 @@ public class GameManager : MonoBehaviour
     {        
         ContadorDeTempo();        
         AtualizaçãoDisplay();
+        pontuacao = player.pontos;
     }
 
     public void AtualizaçãoDisplay()
