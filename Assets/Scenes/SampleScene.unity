@@ -911,7 +911,11 @@ Transform:
   m_PrefabInstance: {fileID: 244926668}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &953912753
+=======
+--- !u!1 &988881121
+>>>>>>> Stashed changes
 =======
 --- !u!1 &988881121
 >>>>>>> Stashed changes
@@ -923,6 +927,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - component: {fileID: 953912756}
   - component: {fileID: 953912755}
   - component: {fileID: 953912754}
@@ -932,18 +937,24 @@ GameObject:
   m_Layer: 0
   m_Name: Player
 =======
+=======
+>>>>>>> Stashed changes
   - component: {fileID: 988881125}
   - component: {fileID: 988881124}
   - component: {fileID: 988881123}
   - component: {fileID: 988881122}
   m_Layer: 0
   m_Name: Canvas
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 --- !u!95 &953912754
 Animator:
@@ -1037,11 +1048,15 @@ Transform:
 =======
 --- !u!114 &988881122
 >>>>>>> Stashed changes
+=======
+--- !u!114 &988881122
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 953912753}
   m_Enabled: 1
@@ -1055,6 +1070,8 @@ MonoBehaviour:
 --- !u!61 &953912758
 BoxCollider2D:
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 988881121}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1068,11 +1085,15 @@ BoxCollider2D:
     m_Bits: 4294967295
 --- !u!114 &988881123
 MonoBehaviour:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 953912753}
   m_Enabled: 1
@@ -1117,6 +1138,8 @@ MonoBehaviour:
 Rigidbody2D:
   serializedVersion: 4
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 988881121}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1136,11 +1159,15 @@ Rigidbody2D:
   m_PresetInfoIsWorld: 0
 --- !u!223 &988881124
 Canvas:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 953912753}
   m_BodyType: 0
@@ -1163,6 +1190,8 @@ Canvas:
   m_CollisionDetection: 0
   m_Constraints: 4
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 988881121}
   m_Enabled: 1
   serializedVersion: 3
