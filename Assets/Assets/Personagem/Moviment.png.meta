@@ -113,10 +113,10 @@ TextureImporter:
       name: Moviment_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 292
-        width: 13
-        height: 21
+        x: 0
+        y: 288
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: Moviment_1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 292
-        width: 13
-        height: 21
+        x: 48
+        y: 288
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: Moviment_2
       rect:
         serializedVersion: 2
-        x: 114
-        y: 292
-        width: 13
-        height: 21
+        x: 96
+        y: 288
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: Moviment_3
       rect:
         serializedVersion: 2
-        x: 162
-        y: 292
-        width: 13
-        height: 20
+        x: 144
+        y: 288
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: Moviment_4
       rect:
         serializedVersion: 2
-        x: 210
-        y: 292
-        width: 13
-        height: 20
+        x: 192
+        y: 288
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: Moviment_5
       rect:
         serializedVersion: 2
-        x: 258
-        y: 292
-        width: 13
-        height: 21
+        x: 240
+        y: 288
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: Moviment_6
       rect:
         serializedVersion: 2
-        x: 17
-        y: 260
-        width: 14
-        height: 21
+        x: 0
+        y: 256
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: Moviment_7
       rect:
         serializedVersion: 2
-        x: 65
-        y: 260
-        width: 14
-        height: 23
+        x: 48
+        y: 256
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: Moviment_8
       rect:
         serializedVersion: 2
-        x: 114
-        y: 260
-        width: 14
-        height: 22
+        x: 96
+        y: 256
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: Moviment_9
       rect:
         serializedVersion: 2
-        x: 161
-        y: 260
-        width: 14
-        height: 21
+        x: 144
+        y: 256
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: Moviment_10
       rect:
         serializedVersion: 2
-        x: 210
-        y: 260
-        width: 14
-        height: 23
+        x: 192
+        y: 256
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: Moviment_11
       rect:
         serializedVersion: 2
-        x: 258
-        y: 260
-        width: 14
-        height: 22
+        x: 240
+        y: 256
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +365,10 @@ TextureImporter:
       name: Moviment_12
       rect:
         serializedVersion: 2
-        x: 17
-        y: 228
-        width: 14
-        height: 21
+        x: 0
+        y: 224
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +386,10 @@ TextureImporter:
       name: Moviment_13
       rect:
         serializedVersion: 2
-        x: 65
-        y: 228
-        width: 14
-        height: 23
+        x: 48
+        y: 224
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +407,10 @@ TextureImporter:
       name: Moviment_14
       rect:
         serializedVersion: 2
-        x: 112
-        y: 228
-        width: 14
-        height: 22
+        x: 96
+        y: 224
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: Moviment_15
       rect:
         serializedVersion: 2
-        x: 161
-        y: 228
-        width: 14
-        height: 21
+        x: 144
+        y: 224
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +449,10 @@ TextureImporter:
       name: Moviment_16
       rect:
         serializedVersion: 2
-        x: 208
-        y: 228
-        width: 14
-        height: 23
+        x: 192
+        y: 224
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +470,10 @@ TextureImporter:
       name: Moviment_17
       rect:
         serializedVersion: 2
-        x: 256
-        y: 228
-        width: 14
-        height: 22
+        x: 240
+        y: 224
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,10 +491,10 @@ TextureImporter:
       name: Moviment_18
       rect:
         serializedVersion: 2
-        x: 18
-        y: 196
-        width: 13
-        height: 24
+        x: 0
+        y: 192
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,10 +512,10 @@ TextureImporter:
       name: Moviment_19
       rect:
         serializedVersion: 2
-        x: 66
-        y: 196
-        width: 13
-        height: 23
+        x: 48
+        y: 192
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,10 +533,10 @@ TextureImporter:
       name: Moviment_20
       rect:
         serializedVersion: 2
-        x: 114
-        y: 196
-        width: 13
-        height: 22
+        x: 96
+        y: 192
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,10 +554,10 @@ TextureImporter:
       name: Moviment_21
       rect:
         serializedVersion: 2
-        x: 162
-        y: 196
-        width: 13
-        height: 24
+        x: 144
+        y: 192
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,10 +575,10 @@ TextureImporter:
       name: Moviment_22
       rect:
         serializedVersion: 2
-        x: 210
-        y: 196
-        width: 13
-        height: 23
+        x: 192
+        y: 192
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,10 +596,10 @@ TextureImporter:
       name: Moviment_23
       rect:
         serializedVersion: 2
-        x: 258
-        y: 196
-        width: 13
-        height: 23
+        x: 240
+        y: 192
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,10 +617,10 @@ TextureImporter:
       name: Moviment_24
       rect:
         serializedVersion: 2
-        x: 18
-        y: 164
-        width: 13
-        height: 22
+        x: 0
+        y: 160
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,10 +638,10 @@ TextureImporter:
       name: Moviment_25
       rect:
         serializedVersion: 2
-        x: 66
-        y: 164
-        width: 13
-        height: 21
+        x: 48
+        y: 160
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,10 +659,10 @@ TextureImporter:
       name: Moviment_26
       rect:
         serializedVersion: 2
-        x: 114
-        y: 164
-        width: 13
-        height: 22
+        x: 96
+        y: 160
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,10 +680,10 @@ TextureImporter:
       name: Moviment_27
       rect:
         serializedVersion: 2
-        x: 162
-        y: 164
-        width: 13
-        height: 22
+        x: 144
+        y: 160
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,10 +701,10 @@ TextureImporter:
       name: Moviment_28
       rect:
         serializedVersion: 2
-        x: 210
-        y: 164
-        width: 13
-        height: 21
+        x: 192
+        y: 160
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -722,10 +722,10 @@ TextureImporter:
       name: Moviment_29
       rect:
         serializedVersion: 2
-        x: 258
-        y: 164
-        width: 13
-        height: 22
+        x: 240
+        y: 160
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -743,10 +743,10 @@ TextureImporter:
       name: Moviment_30
       rect:
         serializedVersion: 2
-        x: 18
-        y: 132
-        width: 13
-        height: 23
+        x: 0
+        y: 128
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -764,10 +764,10 @@ TextureImporter:
       name: Moviment_31
       rect:
         serializedVersion: 2
-        x: 65
-        y: 133
-        width: 14
-        height: 23
+        x: 48
+        y: 128
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -785,10 +785,10 @@ TextureImporter:
       name: Moviment_32
       rect:
         serializedVersion: 2
-        x: 113
-        y: 133
-        width: 14
-        height: 23
+        x: 96
+        y: 128
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -806,10 +806,10 @@ TextureImporter:
       name: Moviment_33
       rect:
         serializedVersion: 2
-        x: 161
-        y: 133
-        width: 14
-        height: 23
+        x: 144
+        y: 128
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -827,10 +827,10 @@ TextureImporter:
       name: Moviment_34
       rect:
         serializedVersion: 2
-        x: 17
-        y: 100
-        width: 14
-        height: 21
+        x: 0
+        y: 96
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -848,10 +848,10 @@ TextureImporter:
       name: Moviment_35
       rect:
         serializedVersion: 2
-        x: 63
-        y: 100
-        width: 15
-        height: 21
+        x: 48
+        y: 96
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -869,10 +869,10 @@ TextureImporter:
       name: Moviment_36
       rect:
         serializedVersion: 2
-        x: 111
-        y: 100
-        width: 15
-        height: 21
+        x: 96
+        y: 96
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -890,10 +890,10 @@ TextureImporter:
       name: Moviment_37
       rect:
         serializedVersion: 2
-        x: 159
-        y: 100
-        width: 15
-        height: 21
+        x: 144
+        y: 96
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -911,10 +911,10 @@ TextureImporter:
       name: Moviment_38
       rect:
         serializedVersion: 2
-        x: 17
-        y: 68
-        width: 14
-        height: 21
+        x: 0
+        y: 64
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -932,10 +932,10 @@ TextureImporter:
       name: Moviment_39
       rect:
         serializedVersion: 2
-        x: 66
-        y: 68
-        width: 15
-        height: 21
+        x: 48
+        y: 64
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -953,10 +953,10 @@ TextureImporter:
       name: Moviment_40
       rect:
         serializedVersion: 2
-        x: 114
-        y: 68
-        width: 15
-        height: 21
+        x: 96
+        y: 64
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -974,10 +974,10 @@ TextureImporter:
       name: Moviment_41
       rect:
         serializedVersion: 2
-        x: 162
-        y: 68
-        width: 15
-        height: 21
+        x: 144
+        y: 64
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -995,10 +995,10 @@ TextureImporter:
       name: Moviment_42
       rect:
         serializedVersion: 2
-        x: 18
-        y: 37
-        width: 13
-        height: 21
+        x: 0
+        y: 32
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1016,10 +1016,10 @@ TextureImporter:
       name: Moviment_43
       rect:
         serializedVersion: 2
-        x: 66
-        y: 36
-        width: 13
-        height: 21
+        x: 48
+        y: 32
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1037,10 +1037,10 @@ TextureImporter:
       name: Moviment_44
       rect:
         serializedVersion: 2
-        x: 114
-        y: 36
-        width: 13
-        height: 21
+        x: 96
+        y: 32
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1058,10 +1058,10 @@ TextureImporter:
       name: Moviment_45
       rect:
         serializedVersion: 2
-        x: 162
-        y: 36
-        width: 13
-        height: 21
+        x: 144
+        y: 32
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1079,10 +1079,10 @@ TextureImporter:
       name: Moviment_46
       rect:
         serializedVersion: 2
-        x: 18
-        y: 4
-        width: 15
-        height: 18
+        x: 0
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1100,10 +1100,10 @@ TextureImporter:
       name: Moviment_47
       rect:
         serializedVersion: 2
-        x: 66
-        y: 4
-        width: 16
-        height: 17
+        x: 48
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1121,10 +1121,10 @@ TextureImporter:
       name: Moviment_48
       rect:
         serializedVersion: 2
-        x: 114
-        y: 4
-        width: 13
-        height: 20
+        x: 96
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1142,10 +1142,10 @@ TextureImporter:
       name: Moviment_49
       rect:
         serializedVersion: 2
-        x: 162
-        y: 4
-        width: 13
-        height: 22
+        x: 144
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1163,10 +1163,10 @@ TextureImporter:
       name: Moviment_50
       rect:
         serializedVersion: 2
-        x: 212
-        y: 11
-        width: 11
-        height: 18
+        x: 192
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1184,10 +1184,10 @@ TextureImporter:
       name: Moviment_51
       rect:
         serializedVersion: 2
-        x: 260
-        y: 13
-        width: 11
-        height: 18
+        x: 240
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1197,48 +1197,6 @@ TextureImporter:
       bones: []
       spriteID: 80677202b9878524299257e0be5e1731
       internalID: 1180876778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Moviment_52
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 4
-        width: 13
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 77ab7531d0f0e4b41a9222d6cab813d0
-      internalID: 1481964175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Moviment_53
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 4
-        width: 13
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61f126c19c4cab445b14ba224d859565
-      internalID: -1750532206
       vertices: []
       indices: 
       edges: []
@@ -1302,8 +1260,6 @@ TextureImporter:
       Moviment_5: 55597615
       Moviment_50: -680090644
       Moviment_51: 1180876778
-      Moviment_52: 1481964175
-      Moviment_53: -1750532206
       Moviment_6: -1943959288
       Moviment_7: 1969221337
       Moviment_8: 1594961990

@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private Animator animator;
     private Vector2 movement;
 
     //COLETA DE LIXO
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -48,6 +50,7 @@ public class Player : MonoBehaviour
         {            
             sr.flipX = true;
         }
+        animator.SetFloat("speed", rb.velocity.magnitude);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
