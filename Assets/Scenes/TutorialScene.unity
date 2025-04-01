@@ -8212,8 +8212,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7271532645520297725, guid: bcb789f2e83d8ca4dab0cee707bb53cd, type: 3}
     - target: {fileID: 654482477666425966, guid: 17405a8db020efc48ab389b124f721ba, type: 3}
+      propertyPath: prefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 654482477666425966, guid: 17405a8db020efc48ab389b124f721ba, type: 3}
       propertyPath: randomPositionMax.x
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 654482477666425966, guid: 17405a8db020efc48ab389b124f721ba, type: 3}
       propertyPath: randomPositionMax.y
@@ -8221,12 +8225,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654482477666425966, guid: 17405a8db020efc48ab389b124f721ba, type: 3}
       propertyPath: randomPositionMin.x
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 654482477666425966, guid: 17405a8db020efc48ab389b124f721ba, type: 3}
       propertyPath: randomPositionMin.y
-      value: -3
+      value: -5
       objectReference: {fileID: 0}
+    - target: {fileID: 654482477666425966, guid: 17405a8db020efc48ab389b124f721ba, type: 3}
+      propertyPath: prefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 7271532645520297725, guid: bcb789f2e83d8ca4dab0cee707bb53cd, type: 3}
     - target: {fileID: 4556163221854410667, guid: 17405a8db020efc48ab389b124f721ba, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -8919,7 +8927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1358424520526314044, guid: bcb789f2e83d8ca4dab0cee707bb53cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.49
+      value: -1.04
       objectReference: {fileID: 0}
     - target: {fileID: 1358424520526314044, guid: bcb789f2e83d8ca4dab0cee707bb53cd, type: 3}
       propertyPath: m_LocalPosition.z
