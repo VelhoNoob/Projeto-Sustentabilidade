@@ -15,6 +15,13 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject lixoCarregado = null;
     [SerializeField] private int pontos = 0;
 
+    // Prefab a ser instanciado
+    public GameObject prefab;
+
+    // Intervalo de posições aleatórias
+    public Vector2 randomPositionMin;
+    public Vector2 randomPositionMax;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -53,28 +60,32 @@ public class Player : MonoBehaviour
         animator.SetFloat("speed", rb.velocity.magnitude);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Pegando a tag do objeto colidido
+        string collisionTag = collision.collider.tag;
+
         // Pegando o lixo
         if (lixoCarregado == null &&
-            (collision.CompareTag("Lixo_Verde") ||
-             collision.CompareTag("Lixo_Azul") ||
-             collision.CompareTag("Lixo_Vermelho") ||
-             collision.CompareTag("Lixo_Amarelo")))
+            (collisionTag == "Lixo_Verde" ||
+             collisionTag == "Lixo_Azul" ||
+             collisionTag == "Lixo_Vermelho" ||
+             collisionTag == "Lixo_Amarelo"))
         {
             lixoCarregado = collision.gameObject; // O jogador pega o lixo
             lixoCarregado.GetComponent<Collider2D>().enabled = false; // Desabilita o collider do lixo para evitar múltiplas coletas
-            lixoCarregado.transform.SetParent(transform); // Faz o lixo "grudar" no jogadorx
+            lixoCarregado.transform.SetParent(transform); // Faz o lixo "grudar" no jogador
         }
 
         // Descartando o lixo na lixeira
         if (lixoCarregado != null &&
-            (collision.CompareTag("Lixeira_Verde") ||
-             collision.CompareTag("Lixeira_Azul") ||
-             collision.CompareTag("Lixeira_Vermelho") ||
-             collision.CompareTag("Lixeira_Amarelo")))
+            (collisionTag == "Lixeira_Verde" ||
+             collisionTag == "Lixeira_Azul" ||
+             collisionTag == "Lixeira_Vermelho" ||
+             collisionTag == "Lixeira_Amarelo"))
         {
-            string corLixeira = collision.tag.Replace("Lixeira_", "");
+            //
+            string corLixeira = collisionTag.Replace("Lixeira_", "");
             string corLixo = lixoCarregado.tag.Replace("Lixo_", "");
 
             if (corLixo == corLixeira)
@@ -87,6 +98,14 @@ public class Player : MonoBehaviour
                 pontos -= 5; // Perde pontos
                 Debug.Log("Lixo descartado errado! Pontos: " + pontos);
             }
+
+            Vector2 randomPosition = new Vector2(
+                Random.Range(randomPositionMin.x, randomPositionMax.x),
+                Random.Range(randomPositionMin.y, randomPositionMax.y)
+            );
+
+            // Instancia o prefab na posição aleatória
+            Instantiate(prefab, randomPosition, Quaternion.identity);
 
             Destroy(lixoCarregado); // Remove o lixo descartado
             lixoCarregado = null; // Libera o jogador para pegar outro lixo

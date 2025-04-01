@@ -14,7 +14,10 @@ public class ChangeScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ChangeToScene("Menu");
+        }
     }
 
     // Método para mudar a cena
