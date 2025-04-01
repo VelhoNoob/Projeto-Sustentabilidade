@@ -13,10 +13,11 @@ public class Player : MonoBehaviour
 
     //COLETA DE LIXO
     [SerializeField] private GameObject lixoCarregado = null;
-    [SerializeField] private int pontos = 0;
+    public int pontos = 0;
 
     // Prefab a ser instanciado
-    public GameObject prefab;
+    public List<GameObject> prefabs;
+
 
     // Intervalo de posições aleatórias
     public Vector2 randomPositionMin;
@@ -105,7 +106,11 @@ public class Player : MonoBehaviour
             );
 
             // Instancia o prefab na posição aleatória
-            Instantiate(prefab, randomPosition, Quaternion.identity);
+            GameObject randomPrefab = prefabs[Random.Range(0, prefabs.Count)];
+
+            // Instancia o prefab na posição aleatória
+            Instantiate(randomPrefab, randomPosition, Quaternion.identity);
+
 
             Destroy(lixoCarregado); // Remove o lixo descartado
             lixoCarregado = null; // Libera o jogador para pegar outro lixo
